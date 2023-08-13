@@ -1,0 +1,17 @@
+{
+  "name": "mini-data-structure",
+  "version": "0.0.1",
+  "description": "jayden-data-structure",
+  "private": true,
+  "main": "index.js",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn workspace @jaydenlee/mini-data-structure build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JaydenLee1116",
+  "license": "MIT"
+}
