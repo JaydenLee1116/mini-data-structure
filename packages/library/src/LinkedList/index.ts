@@ -79,11 +79,13 @@ export class LinkedList<T> {
   }
 
   printAllValue() {
+    const resultForPrint: T[] = [];
     let currentNode = this.head;
     while (currentNode) {
-      console.log(currentNode.value);
+      resultForPrint.push(currentNode.value);
       currentNode = currentNode.next;
     }
+    console.log(resultForPrint.join(' -> '));
   }
 
   clear() {
