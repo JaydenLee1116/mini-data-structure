@@ -1,9 +1,9 @@
 {
   "name": "@jaydenlee/mini-data-structure",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "type": "module",
   "files": [
-    "dist"
+    "*"
   ],
   "main": "./dist/mini-data-structure.umd.cjs",
   "module": "./dist/mini-data-structure.js",
@@ -16,6 +16,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:publish": "tsc && vite build && npm publish --access public",
     "preview": "vite preview"
   },
   "devDependencies": {
