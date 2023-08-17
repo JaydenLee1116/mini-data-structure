@@ -38,14 +38,15 @@ export class LinkedList<T> {
   }
 
   deleteAt(index: number) {
-    if (index < 0 || index >= this.count) {
-      throw new Error('Index is out of range');
+    if (index >= this.count || index < 0) {
+      throw new Error('delete하기 위한 index값이 범위에서 벗어납니다.');
     }
 
     if (index === 0) {
-      if (this.head) {
-        this.head = this.head.next;
-      }
+      const deletedNode = this.head;
+      this.head = this.head!.next;
+      this.count--;
+      return deletedNode;
     } else {
       let currentNode = this.head;
       for (let i = 0; i < index - 1; i++) {
@@ -53,11 +54,13 @@ export class LinkedList<T> {
           currentNode = currentNode.next;
         }
       }
-      if (currentNode) {
-        currentNode.next = currentNode.next?.next || null;
+      if (currentNode && currentNode.next) {
+        const deletedNode = currentNode.next;
+        currentNode.next = currentNode.next.next;
+        this.count--;
+        return deletedNode;
       }
     }
-    this.count--;
   }
 
   deleteLast() {
