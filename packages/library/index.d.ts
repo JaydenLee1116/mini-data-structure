@@ -16,3 +16,12 @@ export declare class LinkedList<T> {
   printAllValue(): void;
   clear(): void;
 }
+
+export declare class Stack<T> {
+  linkedList: LinkedList<T>;
+  constructor();
+  push(value: T): void;
+  pop(): T | null;
+  peek(index: number): Node<T> | null;
+  isEmpty(): boolean;
+}
