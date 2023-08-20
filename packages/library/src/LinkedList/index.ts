@@ -39,7 +39,7 @@ export class LinkedList<T> {
 
   deleteAt(index: number) {
     if (index >= this.count || index < 0) {
-      throw new Error('delete하기 위한 index값이 범위에서 벗어납니다.');
+      throw new Error('Index is out of range');
     }
 
     if (index === 0) {
