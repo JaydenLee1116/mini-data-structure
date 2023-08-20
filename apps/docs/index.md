@@ -8,17 +8,17 @@ hero:
   tagline: JS+TS Data Structure
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
       text: API Examples
       link: /api-examples
+    - theme: alt
+      text: Coming Soon
+      link: /coming-soon
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Node, LinkedList
+    details: Use Node, LinkedList to implement various data structures
+  - title: Stack, Queue
+    details: Use Stack, Queue to understand the principle of data structure
+  - title: More Data Structures...
+    details: More data structures will be added soon
 ---
