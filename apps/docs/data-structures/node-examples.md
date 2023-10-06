@@ -13,6 +13,8 @@ The next node
 ## Example
 
 ```ts
+import { Node } from '@jaydenlee/mini-data-structure';
+
 const node = new Node(1);
 
 console.log(node.value); // 1
