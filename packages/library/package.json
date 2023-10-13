@@ -1,6 +1,6 @@
 {
   "name": "@jaydenlee/mini-data-structure",
-  "version": "0.2.3",
+  "version": "0.3.1",
   "type": "module",
   "files": [
     "*"
@@ -27,5 +27,9 @@
     "ts-jest": "^29.1.1",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
